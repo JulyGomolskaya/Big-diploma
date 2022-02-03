@@ -134,6 +134,19 @@ table {
           box-sizing: border-box;
 }
 
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.txt {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+}
+
 .section-gradient {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   border-radius: 0px 0px 12px 12px;
@@ -199,4 +212,14 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.section-first__title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-first__button {
+  padding-bottom: 30px;
 }
