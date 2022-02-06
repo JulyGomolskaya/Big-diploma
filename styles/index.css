@@ -134,17 +134,19 @@ table {
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
-}
-
-.txt {
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 30px;
 }
 
 .section-gradient {
@@ -198,6 +200,67 @@ table {
   height: 100%;
 }
 
+.header-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo info" "logo nav";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-grid {
+    grid-auto-columns: 1fr;
+        grid-template-areas: "info" "logo" "nav";
+  }
+}
+
+.header-grid__logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-grid__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-grid__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.btn-txt {
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 5px 7px;
+  border-radius: 12px;
+}
+
+.btn-txt:hover {
+  background-color: #FFFFFF33;
+}
+
+.btn-txt:active {
+  background-color: #F0145A;
+}
+
 .section-first {
   min-height: 100vh;
   position: relative;
@@ -218,8 +281,267 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: white;
 }
 
 .section-first__button {
   padding-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.section-first__button:hover {
+  color: #F0145A;
+}
+
+.section-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.section-second__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 375px;
+  padding-right: 60px;
+  min-height: 274px;
+}
+
+.section-second__right {
+  width: 581px;
+  padding-left: 60px;
+}
+
+.h2 {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: bold;
+  text-align: right;
+  color: #B3B3BA;
+  text-decoration: none;
+}
+
+.h2:hover {
+  color: #F0145A;
+}
+
+.h2-2 {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: bold;
+  color: #f0145a #ef8080;
+  padding-top: 10px;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+.txt {
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: white;
+}
+
+.txt-main2 {
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: white;
+  padding-top: 30px;
+}
+
+.txt-address {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.txt-phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.txt-blue {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24A3FF;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.team-name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+  padding-top: 30px;
+  padding-bottom: 6px;
+}
+
+.team-name2 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+}
+
+.theme {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+.link {
+  padding-left: 15px;
+}
+
+.link:hover {
+  color: #F0145A;
+  border-bottom: 2px solid;
+}
+
+.block-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.bloks {
+  max-width: 400px;
+}
+
+.icon-blocks {
+  padding-top: 30px;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5F5FA;
+  border-radius: 12px;
+  margin: 60px 60px 30px 60px;
+}
+
+.team-txt {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.point-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: #24A3FF;
+  opacity: 0.2;
+}
+
+.point-item:hover {
+  color: #0085ff;
+}
+
+.trust {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #323264;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.colors__1 {
+  background-color: #1c4280;
+}
+
+.colors__2 {
+  background-color: #143646;
+}
+
+.colors__3 {
+  background-color: #F48B30;
+}
+
+.colors__4 {
+  background-color: #9E4DC3;
+}
+
+.form {
+  width: 360px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
