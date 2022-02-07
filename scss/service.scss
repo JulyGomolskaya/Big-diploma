@@ -1,0 +1,333 @@
+@import "./reset";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+.section-gradient {
+    background: linear-gradient(
+      228.57deg,
+      #323264 11.93%,
+      #323264 57.17%,
+      #643e72 87.46%
+    );
+    border-radius: 0px 0px 12px 12px;
+    min-height: 100vh;
+    margin-bottom: 20px;
+    position: relative;
+    &__shadow {
+      position: absolute;
+      border-radius: 0px 0px 12px 12px;
+      height: 10px;
+    }
+    &__shadow-1 {
+      width: calc(100% - 40px);
+      background: #cacadb;
+      bottom: -10px;
+      left: 20px;
+    }
+    &__shadow-2 {
+      width: calc(100% - 80px);
+      background: #e7e7f2;
+      bottom: -20px;
+      left: 40px;
+    }
+  }
+
+.main-wrap {
+    
+    position: relative;
+  }
+
+.header-grid {
+    display: grid;
+    grid-template-areas: "logo info" "logo nav";
+    justify-content: space-between;
+    padding-top: 50px;
+    @media screen and (max-width: 768px) {
+      grid-auto-columns: 1fr;
+      grid-template-areas: "info" "logo" "nav";
+    }
+    &__logo {
+      max-width: 100%;
+      height: auto;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__nav {
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+    }
+  }
+
+.btn-txt {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s ease;
+    padding: 5px 7px;
+    border-radius: 12px;
+    &:hover {
+      background-color:#FFFFFF33;
+    }
+    &:active {
+      background-color:#F0145A;
+    }
+  }  
+
+.main-service {
+    padding-top: 66px;
+}  
+
+.h2 {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: bold;
+    text-align: right;
+    color: #B3B3BA;
+    text-decoration: none;
+    &:hover {
+      color: #fa3a77;
+    }
+  }
+.h2-2 {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #fa3a77;
+  
+  }
+.h3 {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37px;
+    color: #FFFFFF;
+  }
+.txt {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+    color: white;
+  }
+.txt-main2 {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+    color: white;
+    padding-top: 30px;
+  }
+.txt-address {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+  }
+.txt-phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+  }
+.txt-blue {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color:#24A3FF;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+.team-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(179, 179, 186, 1);
+    padding-top: 30px;
+    padding-bottom: 6px;
+  }
+.team-name2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(179, 179, 186, 1);
+  }
+.theme {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #24A3FF;
+  }
+.link {
+    padding-left: 15px;
+    &:hover {
+      color: #F0145A;
+      border-bottom: 2px solid;
+    }
+  }
+.block-up {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+.bloks {
+    max-width: 400px;
+  }
+.icon-blocks {
+    padding-top: 60px;
+  }
+.trust {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #323264;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+.colors {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    &__1 {
+      background-color: rgba(28, 66, 128, 1);
+    }
+    &__2 {
+      background-color: rgba(20, 54, 70, 1);
+    }
+    &__3 {
+        background-color: #F48B30;
+      }
+    &__4 {
+        background-color: #9E4DC3;
+      }
+    &__5 {
+      background-color: #FD9339;
+    }  
+    &__6 {
+      background-color: #E2E2E4;
+    }
+    &__7 {
+      background-color: #C71C36;
+    }
+    &__8 {
+      background-color: #DCF3F9;  
+    }
+    &__9 {
+      background-color: #EAEAEA;
+    }
+    &__10 {
+      background-color: #282240;
+    }
+    &__11 {
+      background-color: #1D4568;
+    }
+    &__12 {
+      background-color: #000000;
+    }
+  }
+.form {
+    width: 360px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.main3 {
+    background-color: #F5F5FA;
+    padding: 30px 60px;
+  }
+.block-main3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+.main3-content {
+    width: 420px;
+    height: 450px;
+    background-color: white;
+  }
+.h5 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #24A3FF;
+    padding-bottom: 15px;
+  }
+.h6 {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    padding-bottom: 15px;
+  }
+.txt-m3 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    padding-top: 15px;
+  }
+.text {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+.foot {
+    display: flex;
+    justify-content: space-between;
+  }
+.footer-row {
+    display: flex;
+    align-items: center;
+  }
+.footer-row:nth-child(2) {
+    margin-top: 20px;
+  }
+.footer-point {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #B3B3BA;
+    margin: 0 10px;
+  }
+.footer-txt {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+    &__last {
+      color: #B3B3BA;
+    }
+    &__bold {
+      font-weight: bold;
+      color: #46466E;
+    }
+    &__blue-mail {
+      color: #24A3FF;
+    }
+    &__blue {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: #24A3FF;
+    }
+    
+  }
