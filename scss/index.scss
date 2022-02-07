@@ -8,6 +8,16 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
+  @media screen and (max-width: 648px) {
+    min-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 30px;
+    max-width: 768px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 30px;
+  }
 }
 
 
@@ -249,6 +259,16 @@ body {
   background-color:#F5F5FA;
   border-radius: 12px;
   margin: 60px 60px 30px 60px;
+  @media screen and (max-width: 648px) {
+    min-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 30px;
+    max-width: 768px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 30px;
+  }
 }
 .team-txt {
   margin-left: 30px;
@@ -378,6 +398,13 @@ body {
   justify-content: space-between;
   border-top: 2px solid #E6E6F0;
   padding-top: 30px;
+  @media screen and (max-width: 648px) {
+   flex-direction: column;
+   padding: 30px 30px 0 30px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+   }
 }
 .footer-row {
   display: flex;
