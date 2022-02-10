@@ -81,15 +81,35 @@ body {
   &__logo {
     max-width: 100%;
     height: auto;
+    grid-area: logo;
   }
   &__info {
     display: flex;
     justify-content: space-between;
+    grid-area: info;
+    @media screen and (max-width: 768px) {
+      max-height: 45px;
+      grid-area: info;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 0 15px;
+    }
   }
   &__nav {
     display: flex;
     justify-content: flex-end;
     text-align: right;
+    grid-area: nav;
+  }
+  &__lang {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contact {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -172,6 +192,7 @@ body {
   font-weight: bold;
   padding-top: 10px;
   color: #fa3a77;
+  max-width: 860px;
 
 }
 .h3 {
@@ -239,7 +260,7 @@ body {
   padding-left: 15px;
   &:hover {
     color: #F0145A;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid transparent;
   }
 }
 .block-up {
@@ -254,11 +275,14 @@ body {
 .icon-blocks {
   padding-top: 60px;
 }
+
 .team {
   display: flex;
   background-color:#F5F5FA;
+  flex-wrap: wrap;
   border-radius: 12px;
-  margin: 60px 60px 30px 60px;
+  margin-top: 60px;
+  margin-bottom: 30px;
   @media screen and (max-width: 648px) {
     min-width: 100%;
   }
@@ -303,9 +327,14 @@ body {
   text-transform: uppercase;
   padding-bottom: 30px;
 }
+.colors-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .colors {
   display: flex;
-  width: 100%;
   align-items: center;
   &__1 {
     background-color: rgba(28, 66, 128, 1);
@@ -354,10 +383,18 @@ body {
 .main3 {
   background-color: #F5F5FA;
   padding: 30px 60px;
+
+}
+.main3-wrap {
+  max-width: 1320px;
+  align-items: center;
+  padding: 0 15px;
+    margin: 0 auto;
 }
 .block-main3 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -396,6 +433,7 @@ body {
 .foot {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-top: 2px solid #E6E6F0;
   padding-top: 30px;
   @media screen and (max-width: 648px) {
@@ -419,6 +457,14 @@ body {
   border-radius: 50%;
   background-color: #B3B3BA;
   margin: 0 10px;
+}
+.point-head {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin: 5px 10px;
+  background-color: #E6E6F0;
+
 }
 .footer-txt {
   font-weight: normal;
